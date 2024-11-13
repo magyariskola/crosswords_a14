@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keresztrejtvény</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: auto;
+        }
+        td {
+            border: 2px solid #333;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .filled {
+            background-color: #d9d9d9;
+        }
+        .highlight {
+            background-color: #add8e6;
+        }
+        .empty-cell {
+            border: none;
+            background-color: transparent;
+        }
+        input {
+            width: 2em;
+            font-size: 2em;
+            text-align: center;
+            text-transform: uppercase;
+            border: 0;
+            background: transparent;
+            color: black;
+            padding: 0;
+        }
+        .highlight input {
+            background-color: #add8e6;
+        }
+        .image {
+            width: 300px;
+            height: auto;
+        }
+        .row-label {
+            font-weight: bold;
+            text-align: right;
+            padding-right: 10px;
+            border: none; /* Eltávolítja a keretet */
+        }
+    </style>
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div>
+        <p><span style="font-family: 'Noto Sans', sans-serif;">Keresztrejtvény</span>
+        <table>
+<tr>
+    <td class="row-label"></td>
+    <td colspan="6" class="empty-cell"></td>
+    <td style="text-align: center; border: none;font-family: 'Noto Sans', sans-serif;">Megoldás&nbsp;(I)</td> <!-- Hozzáadva a "megoldás (I)" -->
+    <td colspan="7" class="empty-cell"></td>
+</tr>
+<tr>
+    <td class="row-label"></td>
+    <td colspan="6" class="empty-cell"></td>
+    <td style="text-align: center; border: none;">&#8595;</td> <!-- Hozzáadva a lefelé mutató nyíl -->
+    <td colspan="7" class="empty-cell"></td>
+</tr>
+            <tr>
+                <td class="row-label">A</td>
+                <td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td>
+                <td class="empty-cell"></td><td class="highlight"><input maxlength="2"></td><td class="filled"><input maxlength="1"></td>
+                <td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td>
+            </tr>
+            <tr>
+                <td class="row-label">B</td>
+                <td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td>
+                <td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td>
+                <td class="highlight"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td>
+            </tr>
+            <tr>
+                <td class="row-label">C</td>
+                <td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td>
+                <td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td>
+                <td class="highlight"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td>
+                <td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td>
+            </tr>
+            <tr>
+                <td class="row-label">D</td>
+                <td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td>
+                <td class="filled"><input maxlength="2"></td><td class="filled"><input maxlength="1"></td>
+                <td class="highlight"><input maxlength="1"></td><td class="filled"><input maxlength="2"></td><td class="filled"><input maxlength="1"></td>
+                <td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td>
+            </tr>
+            <tr>
+                <td class="row-label">E</td>
+                <td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td>
+                <td class="filled"><input maxlength="1"></td><td class="highlight"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="2"></td>
+                <td class="empty-cell"></td><td class="empty-cell"></td>
+            </tr>
+            <tr>
+                <td class="row-label">F</td>
+                <td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td>
+                <td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td>
+                <td class="highlight"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td>
+                <td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td>
+            </tr>
+<tr>
+<td class="row-label">G</td>
+        <td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td>
+        <td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td>
+        <td class="highlight"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td>
+        <td class="filled"><input maxlength="1"></td><td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td>
+    </tr>
+    <tr>
+<td class="row-label">H</td>
+        <td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td><td class="filled"><input maxlength="1"></td>
+        <td class="filled"><input maxlength="1"></td><td class="highlight"><input maxlength="1"></td><td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td><td class="empty-cell"></td>
+        <td class="empty-cell"></td><td class="empty-cell"></td>
+    </tr>
+    <tr>
+        </table>
+    </div>
+
+    <p><img src="https://hlschoolhu.sharepoint.com/sites/MagyarIskola/_layouts/15/download.aspx?share=ETQZ6mgZeahDhue1K4YYKPQBHbefR_20bw-Grim5PPI05Q" alt="SharePoint Image" width="400" height="400"></p>
+</div>
+
+</body>
+</html>
